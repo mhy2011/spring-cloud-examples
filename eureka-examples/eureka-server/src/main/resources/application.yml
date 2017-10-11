@@ -1,0 +1,12 @@
+server:
+  port: 1111
+
+# 通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # 因为此处在作为注册中心,设置为false代表不向注册中心注册自己
+    fetch-registry: false # 由于注册中心的职责就是维护服务实例,它并不需要去检索服务,所以也设置为false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

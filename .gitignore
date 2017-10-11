@@ -1,0 +1,3 @@
+eureka-examples/eureka-server/.gradle
+*build/
+*.gradle/

@@ -1,0 +1,15 @@
+# 启动脚本
+# java -jar eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=1112
+server:
+  port: 1112
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka/
