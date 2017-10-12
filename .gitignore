@@ -1,3 +1,7 @@
 eureka-examples/eureka-server/.gradle
 *build/
 *.gradle/
+gradle-wrapper.jar
+gradle-wrapper.properties
+eureka-examples/order-front/gradle
+eureka-examples/order-center/gradle
